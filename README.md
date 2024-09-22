@@ -63,8 +63,11 @@ The docker-compose.yml file orchestrates the services for easy setup.
 
 API Endpoints
 +------------+----------------+---------------------------------------------+
+
 |HTTP Method |	    Endpoint  |     Description                             |
+
 +------------+----------------+---------------------------------------------+
+
 |POST	     |      /predict  |     Predict house price based on input data.|
 +------------+----------------+---------------------------------------------+
 
