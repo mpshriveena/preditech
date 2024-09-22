@@ -62,14 +62,9 @@ Frontend Dockerfile builds the Vue.js application.
 The docker-compose.yml file orchestrates the services for easy setup.
 
 API Endpoints
-+------------+----------------+---------------------------------------------+
-
-|HTTP Method |	    Endpoint  |     Description                             |
-
-+------------+----------------+---------------------------------------------+
-
-|POST	     |      /predict  |     Predict house price based on input data.|
-+------------+----------------+---------------------------------------------+
+HTTP Method--> POST
+Endpoint--> /predict
+Description--> Predict house price based on input data.                                 
 
 Example Payload for /predict:
 {
