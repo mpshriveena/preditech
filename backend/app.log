@@ -1,0 +1,110 @@
+
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2024 20:17:21] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 0, 'gr_liv_area': 0, 'garage_cars': 0, 'garage_area': 0, 'total_bsmt_sf': 0}
+WARNING:app:Errors found: {'error2': 'Ground Living area must be greater than 200', 'error3': 'Garage cars must be greater than 0', 'error4': 'Garage area must be greater than 100', 'error5': 'Total Basement must be greater than 100'}
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2024 20:17:21] "[33mPOST /predict HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 753-330-180
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2024 21:50:04] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 7, 'gr_liv_area': 159, 'garage_cars': 3, 'garage_area': 0, 'total_bsmt_sf': 3000}
+WARNING:app:Errors found: {'error2': 'Ground Living area must be greater than 200', 'error4': 'Garage area must be greater than 100'}
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2024 21:50:04] "[33mPOST /predict HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2024 21:50:48] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 7, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 300, 'total_bsmt_sf': 3000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 232677.49553549493
+INFO:werkzeug:127.0.0.1 - - [22/Sep/2024 21:50:49] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:18] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 0, 'gr_liv_area': 0, 'garage_cars': 0, 'garage_area': 0, 'total_bsmt_sf': 0}
+WARNING:app:Errors found: {'error2': 'Ground Living area must be greater than 200', 'error3': 'Garage cars must be greater than 0', 'error4': 'Garage area must be greater than 100', 'error5': 'Total Basement must be greater than 100'}
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:18] "[33mPOST /predict HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:39] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 6000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:39] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:47] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 3000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:47] "POST /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 3000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:49] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:55] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 3000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:36:55] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:10] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 7, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 3000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 193988.19831072324
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:10] "POST /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 3000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:13] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:20] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 50000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:20] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:29] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 1000}
+INFO:app:No errors found
+INFO:app:Predicted Price: 176245.6773371857
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:29] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:35] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 3523}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:35] "POST /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 3523}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:36] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:46] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 600, 'total_bsmt_sf': 2654}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:46] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:59] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 3, 'garage_area': 599, 'total_bsmt_sf': 2654}
+INFO:app:No errors found
+INFO:app:Predicted Price: 216620.72665043754
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:37:59] "POST /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 8, 'gr_liv_area': 500, 'garage_cars': 2, 'garage_area': 599, 'total_bsmt_sf': 2654}
+INFO:app:No errors found
+INFO:app:Predicted Price: 200155.61574449806
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:38:02] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:38:08] "OPTIONS /predict HTTP/1.1" 200 -
+INFO:app:Received Data: {'overall_quality': 6, 'gr_liv_area': 500, 'garage_cars': 2, 'garage_area': 599, 'total_bsmt_sf': 2654}
+INFO:app:No errors found
+INFO:app:Predicted Price: 156583.8896116918
+INFO:werkzeug:172.18.0.1 - - [22/Sep/2024 19:38:08] "POST /predict HTTP/1.1" 200 -

@@ -1,8 +1,11 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
+import logging
 
 app = Flask(__name__)
+
+logging.basicConfig(filename='app.log', level=logging.INFO)
 
 CORS(app, resources={r"/*": {"origins": "*"}})
 
@@ -16,6 +19,7 @@ model = joblib.load('house_price_model.pkl')
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
+    app.logger.info(f"Received Data: {data}")
     errors={}
     overall_quality = data['overall_quality']
     if (overall_quality<0):
@@ -35,9 +39,12 @@ def predict():
     if total_bsmt_sf<=100:
         errors["error5"]='Total Basement must be greater than 100'
     if errors:
+        app.logger.warning(f"Errors found: {errors}")
         return jsonify(errors), 404
+    app.logger.info(f"No errors found")
     input_data = [[overall_quality, gr_liv_area, garage_cars, garage_area, total_bsmt_sf]]
     prediction = model.predict(input_data)
+    app.logger.info(f"Predicted Price: {prediction[0]}")
     return jsonify({'predicted_price': prediction[0]}), 200
 
 if __name__ == '__main__':

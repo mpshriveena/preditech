@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: . 
+      dockerfile: backend/Dockerfile
+    volumes:
+      - ./backend:/preditech/backend 
+    ports:
+      - "5000:5000" 
+    environment:
+      - FLASK_ENV=app.py
+  frontend:
+    build:
+      context: .              
+      dockerfile: frontend/Dockerfile  
+    volumes:
+      - ./frontend:/preditech/frontend 
+    ports:
+      - "5173:5173"     
+    environment:
+      - VITE_DEV_SERVER_PORT=5173 
