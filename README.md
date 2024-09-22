@@ -61,6 +61,10 @@ Backend Dockerfile builds the Flask API.
 Frontend Dockerfile builds the Vue.js application.
 The docker-compose.yml file orchestrates the services for easy setup.
 
+Viewing the application
+The application will be running in the port 5173.
+http://localhost:5173/
+
 API Endpoints
 HTTP Method--> POST
 Endpoint--> /predict
